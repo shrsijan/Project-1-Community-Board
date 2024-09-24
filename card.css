@@ -1,0 +1,125 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center;
+    color: white; /* Adjust based on the image to improve readability */
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card:nth-child(1) .card-content {
+    background-image: url('images/react.png');
+}
+
+.card:nth-child(2) .card-content {
+    background-image: url('images/meetup.png');
+}
+
+.card:nth-child(3) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/pexels-markusspiske-1089438.jpg');
+}
+.card:nth-child(3) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 9.54.23 PM.png');
+}
+
+.card:nth-child(4) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 9.54.55 PM.png');
+}
+
+.card:nth-child(5) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 9.55.25 PM.png');
+}
+
+.card:nth-child(6) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 9.57.05 PM.png');
+}
+
+.card:nth-child(7) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 9.58.00 PM.png');
+}
+
+.card:nth-child(8) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 10.00.49 PM.png');
+}
+
+.card:nth-child(9) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 10.01.10 PM.png');
+}
+
+.card:nth-child(10) .card-content {
+    background-image: url('/Users/sijanshrestha/Desktop/Project-1-Community-Board/community_board/public/images/Screenshot 2024-09-23 at 10.01.32 PM.png');
+} 
+
+/* Common styles for all card backgrounds */
+.card-content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(21, 18, 18, 0.5); /* Overlay to improve readability */
+    padding: 10px;
+    border-radius: 1px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.card-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 18, 18, 0.5); /* Dark overlay */
+    z-index: -1;
+    border-radius: inherit;
+}
+
+
+
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+
+.card p {
+    margin: 2px 0;
+}
+
+.card-button {
+    background-color: #3c5269;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card-button:hover {
+    background-color: #747d87;
+}
+
+.event-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        margin: 8px 0;
+    }
+}

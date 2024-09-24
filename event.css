@@ -1,0 +1,65 @@
+/* Card styling */
+.card {
+    border-radius: 8px;
+    margin: 16px;
+    max-width: 300px;
+    height: 400px; /* Adjust height as necessary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensure text is visible on images */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end; /* Align content to bottom */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Optional: Add a dark overlay for better readability */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 0;
+  }
+  
+  .card-content {
+    padding: 16px;
+    z-index: 1; /* Ensure content appears above the overlay */
+    position: relative;
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 8px 0;
+  }
+  
+  .card-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .event-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+  }
+  
