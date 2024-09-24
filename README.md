@@ -28,7 +28,6 @@ Here's a walkthrough of implemented required features:
 
 https://github.com/user-attachments/assets/1236afdb-d8e8-4919-9d76-3ead196972c2
 
-ough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  imgur
